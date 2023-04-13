@@ -1,6 +1,7 @@
-# flutter_application_1
+# flutter_movie_demo
 
 A new Flutter project.
+alias: dio: ^4.0.5
 
 ## Getting Started
 

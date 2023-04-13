@@ -14,11 +14,16 @@ class MovieList extends StatefulWidget {
   }
 }
 
-class _MovieListState extends State<MovieList> {
+class _MovieListState extends State<MovieList>
+    with AutomaticKeepAliveClientMixin {
   int page = 1;
   int pagesize = 10;
   var mList = [];
   var total = 0;
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 
   @override
   void initState() {
